@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color: crimson;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
 }
 html{
     font-size: 10px;
@@ -393,6 +400,72 @@ p{
 
 }
 /*End About Section*/
+
+#skills .skills{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+#skills .col-left{
+    width: 250px;
+    height: 360px;
+}
+#skills .col-right{
+    width: 100%;
+}
+
+.skills p{
+    color: #666;
+    font-size: 1.7rem;
+    padding: .5rem 0;
+}
+.skills .row-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.skills .row-2 .skills{
+    flex: 1 1 40rem;
+}
+.skills .row-2 .skills .progress{
+    padding: 1rem 0;
+}
+.skills .row-2 .skills .progress h3{
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 0;
+    font-size: 1.7rem;
+    color: #111;
+    font-weight: 400;
+}
+.skills .row-2 .skills .progress .bar{
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+}
+.skills .row-2 .skills .progress .bar span{
+    display: block;
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 50rem;
+}
+.skills .row-2 .skills .progress:nth-child(1) .bar span{
+    width: 50%;
+}
+.skills .row-2 .skills .progress:nth-child(2) .bar span{
+    width: 40%;
+}
+.skills .row-2 .skills .progress:nth-child(3) .bar span{
+    width: 30%;
+}
+.skills .row-2 .skills .progress:nth-child(4) .bar span{
+    width: 50%;
+}
 
 /*Contact Section*/
 #contact .contact {

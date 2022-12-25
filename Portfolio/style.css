@@ -56,6 +56,11 @@ p{
     font-style: italic;
     font-size: 3rem;
 }
+.skills-title span {
+    color: black;
+    font-style: initial;
+    font-size: x-large;
+}
 
 .cta{
     display: inline-block;
@@ -458,10 +463,10 @@ p{
     width: 50%;
 }
 .skills .row-2 .skills .progress:nth-child(2) .bar span{
-    width: 40%;
+    width: 30%;
 }
 .skills .row-2 .skills .progress:nth-child(3) .bar span{
-    width: 30%;
+    width: 45%;
 }
 .skills .row-2 .skills .progress:nth-child(4) .bar span{
     width: 50%;

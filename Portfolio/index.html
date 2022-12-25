@@ -250,13 +250,20 @@
            <div class="heading">
         <div><h2 class="section-title"> Connect with <span>Me</span></h2></div>
     </div>
-    <div class="contact-form">
-        <form action="">
-            <input type="text" placeholder="Your Name">
-            <input type="email" name="" id="" placeholder="Your Email">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
-            <input type="button" value="Send" class="contact-button">
-        </form>
+    <div class="row">
+
+        <form id="email-form" action="#">
+
+            <input id="subject" type="text" placeholder="Name" class="box">
+            <input id="email" type="email" placeholder="Email" class="box">
+            
+
+            <textarea name="message" placeholder="Message" id="message" cols="30" rows="10"></textarea>
+            <div class="row" id="loaders">
+                <img id="spinner" src="images/spinner.gif" width="150">
+            </div>
+            <button id="sendBtn" input type="submit" class="btn" name="action">
+        </form>Send Message</button>
     </div>
        </div>
    </section>
